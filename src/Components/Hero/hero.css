@@ -55,6 +55,15 @@
     border: 2px solid white;
 }
 
+.link-style {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link-style:hover {
+    color: #ffffff;
+}
+
 .hero-resume{
     padding: 25px 75px;
     border-radius: 50px;
