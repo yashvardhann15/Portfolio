@@ -1,9 +1,32 @@
-import React from 'react'
+import React , {useEffect, useState} from 'react'
 import './About.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import profile_img from '../../assets/image.png'
 
+//https://alfa-leetcode-api.onrender.com/yashvardhannn152004/contest
 function About() {
+    const [rate, setRate] = useState('Loading...'); 
+    const [solved, setSolved] = useState('Loading...');
+
+    useEffect(() => {
+        const fetchRating = async () => {
+            const response = await fetch('https://alfa-leetcode-api.onrender.com/yashvardhannn152004/contest');
+            const data = await response.json();
+            setRate(Math.floor(data.contestRating)); // Update the rate state
+        };
+        fetchRating();
+    }, []); 
+
+    useEffect(() => {
+        const fetchSolved = async () => {
+            const response = await fetch('https://alfa-leetcode-api.onrender.com/yashvardhannn152004/solved');
+            const data = await response.json();
+
+            setSolved(data.solvedProblem); // Update the solved state
+        }
+        fetchSolved();
+    } , []);
+
     return (
         <div className='about' id='about'>
             <div className="about-title">
@@ -45,12 +68,12 @@ function About() {
             </div>
             <div className="about-achievements">
                 <div className="about-achievement">
-                    <h1>400+</h1>
+                    <h1>{solved}</h1>
                     <p>Questions on leetcode</p>
                 </div>
                 <hr />
                 <div className="about-achievement">
-                    <h1>1624</h1>
+                    <h1>{rate}</h1>
                     <p>Max Contest Rating</p>
                 </div>
                 <hr />
