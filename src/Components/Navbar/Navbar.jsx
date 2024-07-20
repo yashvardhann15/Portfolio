@@ -10,7 +10,7 @@ import menu_close from '../../assets/menu_close.svg';
 const Navbar = () => {
     const [menu, setMenu] = useState("home");
     const menuRef = useRef();
-ko
+
     const openMenu = () => {
         menuRef.current.style.right = '0';
     };
