@@ -12,7 +12,12 @@ function About() {
         const fetchRating = async () => {
             const response = await fetch('https://alfa-leetcode-api.onrender.com/yashvardhannn152004/contest');
             const data = await response.json();
-            setRate(Math.floor(data.contestRating)); // Update the rate state
+            let maxi = 0;
+            for(let i = 0; i < data.contestParticipation.length; i++){
+                maxi = Math.max(maxi, data.contestParticipation[i].rating);
+            }
+            setRate(Math.floor(maxi)); // Update the rate state
+            console.log(maxi);
         };
         fetchRating();
     }, []); 

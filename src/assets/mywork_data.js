@@ -6,6 +6,7 @@ import project5_img from '../assets/project5.png'
 import project6_img from '../assets/project6.png'
 import project7 from '../assets/project7.png'
 import project8 from '../assets/project8.png'
+import project9_img from '../assets/project9.png'
 
 const mywork_data = [
     {
@@ -16,15 +17,22 @@ const mywork_data = [
             w_description:"A web-based library management system that allows librarians to manage books, members, and book issues. The system is built using HTML, CSS, JavaScript, NodeJS and MySQL. The system has separate interfaces for librarians and members. The system uses a MySQL database to store information about books, members, and book issues. The system is responsive and works well on all devices. The system is hosted on GitHub Pages and can be accessed using the link below.",
             w_link:"https://github.com/yashvardhann15/Library-Management-Project"
         },
+        {w_no:2,
+            w_name:"AI Helper",
+            w_description: "An AI helper tool that supports CSV files and Google Sheets integration. It integrates SerpAPI for Google search based on custom prompts and Groq AI for generating output. A custom AI model was designed using GroqAI to find accurate results. The user interface is built with Streamlit, providing an option to download results.",
+            w_link:"https://github.com/yashvardhann15/Breakout-AI",
+            w_img:project9_img
+
+        },
         {
-        w_no:3,
+        w_no:2,
         w_name:"Quotify",
         w_description:"A web application that enables users to search and discover quotes by keywords, tags, or authors, with the added convenience of sharing quotes directly on Twitter. The application is built using React.js and styled with CSS. The quotes are fetched from an external API. The application is responsive and works well on all devices, including mobile phones and tablets. The application is hosted on GitHub Pages and can be accessed using the link below. ",
         w_link:"https://github.com/yashvardhann15/Quote-Generator",
         w_img:project1_img
     },
     {
-        w_no:2,
+        w_no:3,
         w_name:"Sudoku Game",
         w_img:project2_img,
         w_description:"A web-based Sudoku game that allows users to play Sudoku online. The game is built using HTML, CSS, and JavaScript. The game generates a new Sudoku puzzle each time the user clicks the 'New Game' button. The user can fill in the empty cells with numbers from 1 to 9. The game checks the user's input in real-time and highlights incorrect cells. The user can also ask for a hint to fill in a random cell. The game is responsive and works well on all devices. The game is hosted on GitHub Pages and can be accessed using the link below.",
