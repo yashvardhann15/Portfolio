@@ -6,6 +6,9 @@ import call_icon from '../../assets/call_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
 import insta_icon from '../../assets/insta_icon.jpg'
 import linkedin_icon from '../../assets/linkedin_icon.jpg'
+import leetcode from '../../assets/leetcode.png'
+import github from '../../assets/github.png'
+import codeforces from '../../assets/codeforces.png'
 
 
 const Contact = ()=> {
@@ -114,6 +117,54 @@ const Contact = ()=> {
                       alt=""
                     />{" "}
                     <p style={{ margin: 0, marginLeft: "10px" }}>LinkedIn</p>
+                  </a>
+                  <a
+                    href="https://github.com/yashvardhann15/"
+                    style={{
+                      textDecoration: "none",
+                      color: "inherit",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    <img
+                      src={github}
+                      style={{ width: "24px", height: "24px" }}
+                      alt=""
+                    />{" "}
+                    <p style={{ margin: 0, marginLeft: "10px" }}>Github</p>
+                  </a>
+                                    <a
+                    href="https://leetcode.com/u/yashvardhannn152004/"
+                    style={{
+                      textDecoration: "none",
+                      color: "inherit",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    <img
+                      src={leetcode}
+                      style={{ width: "24px", height: "24px" }}
+                      alt=""
+                    />{" "}
+                    <p style={{ margin: 0, marginLeft: "10px" }}>Leetcode</p>
+                  </a>
+                                                      <a
+                    href="https://codeforces.com/profile/yashvardhann15"
+                    style={{
+                      textDecoration: "none",
+                      color: "inherit",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    <img
+                      src={codeforces}
+                      style={{ width: "24px", height: "24px" }}
+                      alt=""
+                    />{" "}
+                    <p style={{ margin: 0, marginLeft: "10px" }}>Codeforces</p>
                   </a>
                 </div>
               </div>
