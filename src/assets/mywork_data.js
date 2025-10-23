@@ -9,6 +9,7 @@ import project8 from '../assets/project8.png'
 import project9_img from '../assets/project9.png'
 import projectS1_img from '../assets/projectS1.png'
 import project0_img from '../assets/project0.png'
+import gridgame from "../assets/gridgame.png"
 
 const mywork_data = [
     {
@@ -28,7 +29,7 @@ const mywork_data = [
     {   
             w_no:3,
             w_name:"Grid-Game",
-            w_img:project3_img,
+            w_img:gridgame,
             w_description:"Developed a modular game in Java using Design Patterns for extensible gameplay logic. Implemented human and bot players with different difficulty strategies. Designed core logic for an N×N Tic Tac Toe game using optimized undo to restore previous game state. Implemented pluggable winning strategies using the Strategy Design Pattern to enable flexible rule extensions. Tech Stack: JAVA, OOPS, Low Level Design, Design Patterns, SOLID Principles.",
             w_link:"https://github.com/yashvardhann15/Grid-Engine"
         },
